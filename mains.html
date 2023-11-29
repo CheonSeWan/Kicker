@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicker 예약매칭</title>
+    <style>@import url(mains.css);</style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <div id="logo">
+                <img class="logo1" src="logo.jpg" title="logo">
+            </div>
+            <ul>
+                <li><a href="#info">경기 정보</a></li>
+                <li><a href="#method">진행 방식</a></li>
+                <li><a href="#careful">유의사항</a></li>
+                <li><a href="#refund">환불 정책</a></li>
+                <li><a href="#reservation">문의하기/결제하기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="title">
+            <span class="slideshow-container">
+                <div class="Slidesbackground">
+                   <div class="mySlides fade">
+                   <img src="축구장1.jpg" class="slideshow-image">
+                   </div>
+                   <div class="mySlides fade">
+                       <img src="축구장2.jpg" class="slideshow-image">
+                   </div>
+                   <div class="mySlides fade">
+                       <img src="축구장3.jpg" class="slideshow-image">
+                   </div>
+                   <div class="mySlides fade">
+                       <img src="축구장4.jpeg" class="slideshow-image">
+                   </div>
+                   <div class="mySlides fade">
+                       <img src="축구장5.jpeg" class="slideshow-image">
+                   </div>
+                   <button class="prev" onclick="plusSlides(-1)"><</button>
+                   <button class="next" onclick="plusSlides(1)">></button>
+               </div>
+            </span>
+        </div>
+        <div id="info" class="content-block">
+            <h1>경기 정보</h1>
+            <table>
+                <colgroup>
+                    <col width="200px">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>인원</th>
+                        <td>"6 vs 6 / 3파전"</td>
+                    </tr>
+                    <tr>
+                        <th>성별</th>
+                        <td>남자</td>
+                    </tr>
+                    <tr>
+                        <th>참가비</th>
+                        <td>6000원</td>
+                    </tr>
+                    <tr>
+                        <th>구장크기</th>
+                        <td>40m X 20m</td>
+                    </tr>
+                    <tr>
+                        <th>주차</th>
+                        <td>3시간지원(만차시 연락부탁드립니다)</td>
+                    </tr>
+                    <tr>
+                        <th>풋살화 대여</th>
+                        <td>사이즈: 240mm~280mm / 대여료:3,000원</td>
+                    </tr>
+                    <tr>
+                        <th>샤워실/탈의실</th>
+                        <td>없음</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="method" class="content-block">
+            <h1>매치 진행 방식</h1>
+            <strong>매치 규칙</strong>
+            <ul>
+                <li>모든 파울은 사이드라인에서 킥인</li>
+                <li>골키퍼에게 백패스 가능. 손으로는 잡으면 안 돼요</li>
+                <li>사람을 향한 태클 금지</li>
+            </ul>
+            <strong>진행 방식</strong>
+            <ul>
+                <li>매니저가 경기 진행을 도와드려요</li>
+                <li>골키퍼와 휴식을 공평하게 돌아가면서 해요</li>
+                <li>친구끼리 와도 팀 실력이 맞지 않으면 다른 팀이 될 수 있어요</li>
+            </ul>
+            <strong>알아두면 좋아요</strong>
+            <ul>
+                <li>풋살화와 개인 음료를 준비하면 좋아요</li>
+                <li>서로 존중하고 격려하며 함께 즐겨요</li>
+                <li>풋살 평균 레벨은 아마추어</li>
+                <li>하루 평균 250매치가 진행되고 있어요</li>
+                <li>매일 4,500여 명이 팀 없이도 풋살을 즐기고 있어요</li>
+            </ul>
+        </div>
+        <div id="careful" class="content-block">
+            <h1>구장 유의사항</h1>
+            [주차안내]
+            <br>
+            -냉정캠퍼스 D관 지하1층 무료이용
+            <br>
+            -건물주차장 입구쪽 이중주차, 갓길주차 절대금지
+            <br>
+            <br>
+            [화장실]
+            <br>
+            -냉정캠퍼스 D관 1층만 이용(타층 화장실 사용불가)
+            <br>
+            <br>
+            [조명]
+            <br>
+            -자동 (점등 18시 / 소등 2시 30분) 조명이 들어와 있지 않을 경우 구장 옆 사무실에 문의
+            <br>
+            <br>
+            [흡연]
+            <br>
+            -흡연부스 외 절대 금연
+            <br>
+            (흡연구역 외에서 흡연 적발 시 이후 서비스 이용에 제재가 있을 수 있습니다)
+            <br>
+            <br>
+            [대여]
+            <br>
+            -풋살화 유료 대여 가능
+            (2시간 3000원/ 직원에게 문의)
+            <br>
+            -조끼 현장에서 무료 대여 가능
+            <br>
+            <br>
+            [기타]
+            <br>
+            -구장 카페에서 나와 오른편 엘레베이터 이용하여 퇴장
+            <br>
+            -해당 구장은 소음 민원 다발 지역이므로 심야 시간 참가자님들께서는 각별히 주의해주시기를 부탁드리겠습니다. 
+            <br>
+            (1차, 2차 경고시 퇴장 조치 될 수 있습니다.)
+            <br>
+        </div>
+        <div id="refund" class="content-block">
+            <h1>환불 정책</h1>
+            <strong>신청 취소 시 환불 기준</strong>
+            <ul>
+                <li>매치 2일전 : 무료 취소</li>
+                <li>매치 1일전 : 80% 환급</li>
+                <li>당일 ~ 매치 시작 90분 전까지 20% 환급</li>
+                <li>매치 시작 90분 이내 : 환불 불가</li>
+            </ul>
+            <strong>그 외 취소 기준</strong>
+            <ul>
+                <li>결제 후 30분 이내에는 하루 1회에 한해 무료 취소가 가능합니다. (단, 매치 시작 90분 이내일 경우 불가)</li>
+                <li>결제 시 실 결제금액(쿠폰 제외)을 기준으로 위 규정에 따라 환급됩니다.</li>
+                <li>현장에서 매치가 취소되는 경우 참가비는 진행되지 않은 시간만큼 다음날 오전 환급됩니다.</li>
+                <li>매치 시작 90분 전까지 최소 인원이 모이지 않을 시 카카오톡 혹은 LMS으로 
+                <br>
+                    안내되며, 자동 전액 환불됩니다. (단, 공지 전 직접 취소하시는 경우 상단 
+                <br>
+                    일반 환불 규정대로 처리되니 유의하시길 바랍니다)</li>
+            </ul>
+            <strong>다음의 경우는 환불이 불가합니다.</strong>
+            <ul>
+                <li>구장, 날짜, 시간 등을 실수로 잘못 선택한 경우</li>
+                <li>부상, 취업 등 개인 사정으로 신청된 매치에 참여하지 못하는 경우</li>
+                <li>단체 혹은 지인과의 참가로 매치 취소 혹은 변경을 원하는 경우</li>
+                <li>황사/미세먼지로 인해 취소 혹은 변경을 요청하는 경우</li>
+                <li>단순 변심으로 취소 혹은 변경을 요청하는 경우</li>
+            </ul>
+            <strong>유의사항</strong>
+            <ul>
+                <li>
+                    무단 불참하거나 매치 시작 90분 이내에 취소하면 패널티를 받을 수 있습니다.
+                    (참여가 어려울 경우, 환불이 
+                    <br>
+                    불가능하더라도 원활한 매치 진행을 위해 고객 센터로
+                    미리 문의 후 취소해주세요.)
+                </li>
+            </ul>
+            <strong>변경 정책</strong>
+            <ul>
+                <li>변경은 취소와 동일한 환불 규정으로 적용됩니다.</li>
+                <li>변경은 상단 환불 정책 기준 100% 환불일 경우에만 가능하며, 
+                    <br>
+                    규정 외 요청은 적용이 불가합니다.</li>
+            </ul>
+            <strong>우천 및 폭설 정책</strong>
+            <ul>
+                <li>기상청 날씨누리 예보에 따라 진행 여부 및 환불 가능 여부를 공지해드립니다.</li>
+                -공지 시점
+                <li>오전(12시 이전) 매치 : 하루 전 22시 기준, 매치 진행 시간의 강수량 예보가 2mm 이상 시</li>
+                <li>오후(12시 이후) 매치 : 매치 시작 4시간 전 기준, 매치 진행 시간의 강수량 예보가 2mm 이상 시</li>
+                -공지 방법 : 문자(본인 인증된 연락처)
+                <li>‘강수 안내 알림톡’을 받고, 매치 시작 90분 전까지 취소하면 전액 환불됩니다.</li>
+                <li>별도 공지가 없을 시 매치는 정상 진행됩니다.</li>
+            </ul>
+        </div>
+        <div id="reservation">
+            <h1>예약 정보</h1>
+            <label for="numPlayers">참가 인원 선택: </label>
+            <select id="numPlayers" onchange="calculateTotal()">
+                <option value="1">1명</option>
+                <option value="2">2명</option>
+                <option value="3">3명</option>
+                <option value="4">4명</option>
+                <option value="5">5명</option>
+                <option value="6">6명</option>
+                <option value="7">7명</option>
+                <option value="8">8명</option>
+                <option value="9">9명</option>
+                <option value="10">10명</option>
+                <option value="11">11명</option>
+                <option value="12">12명</option>
+                <!-- 추가적인 옵션은 필요에 따라 더 추가할 수 있습니다. -->
+            </select>
+            <p id="totalAmount">총 결제 예상 금액: 0원</p>
+        </div>
+        <div>
+            <button class="community" type="button" onclick="openInquiryForm()">문의하기</button>
+            <button class="payButton" type="button">결제하기</button>
+        </div>
+    </main>
+    <div class="end">
+        <p>&copy; 2023 Kicker 예약매칭. All rights reserved.</p>
+    </div>
+    <div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

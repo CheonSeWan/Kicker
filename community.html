@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기</title>
+    <style>@import url(community.css);</style>
+</head>
+<body>
+    <div class="inquiry-container">
+        <h2>문의하기</h2>
+        <form id="inquiryForm">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">문의 내용:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">전송</button>
+        </form>
+
+        <div id="inquiryHistory">
+            <!-- 이곳에 문의 내역이 표시됩니다. -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 문의 내역을 Local Storage에서 불러와서 화면에 표시
+            displayInquiryHistory();
+
+            // 문의하기 폼 제출 시 호출되는 함수
+            document.getElementById('inquiryForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // 폼 데이터를 가져오기
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // 문의 내역에 추가
+                addInquiryToHistory(name, email, message);
+
+                // 폼 비우기
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            });
+        });
+
+        // 문의 내역을 Local Storage에 저장
+        function addInquiryToHistory(name, email, message) {
+            const inquiry = { name, email, message };
+            const inquiryHistory = JSON.parse(localStorage.getItem('inquiryHistory')) || [];
+            inquiryHistory.push(inquiry);
+            localStorage.setItem('inquiryHistory', JSON.stringify(inquiryHistory));
+
+            // 저장 후 화면에 다시 표시
+            displayInquiryHistory();
+        }
+
+        // 문의 내역을 화면에 표시
+        function displayInquiryHistory() {
+            const inquiryHistory = JSON.parse(localStorage.getItem('inquiryHistory')) || [];
+            const inquiryHistoryContainer = document.getElementById('inquiryHistory');
+
+            // 기존 내역을 비우고 새로 표시
+            inquiryHistoryContainer.innerHTML = '';
+            inquiryHistory.forEach((inquiry, index) => {
+                const div = document.createElement('div');
+                div.innerHTML = `<p>${index + 1}. <strong>${inquiry.name}</strong> (${inquiry.email}): ${inquiry.message}</p>`;
+                inquiryHistoryContainer.appendChild(div);
+            });
+        }
+    </script>
+</body>
+</html>

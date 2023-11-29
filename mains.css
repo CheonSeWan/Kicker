@@ -1,0 +1,266 @@
+body {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    height: 3000px;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    background-color: #db3434e9;
+    color: #ecf0f1;
+    padding: 10px 0;
+    justify-content: flex-end;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    width: 55%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ea6153;
+}
+
+/* #logo{
+    
+} */
+.logo1{
+    width: 200px;
+    height: 70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: relative;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    top: 100px;
+    height: 3200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #502c37;
+    color: #ecf0f1;
+}
+
+.community{background-color: #db3434e9;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 520px;
+}
+.payButton {
+    margin-top: 20px;
+    background-color: #db3434e9;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 520px;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Additional styling for the 경기 정보 section */
+#info table {
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+#info th, #info td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #2c3e50;
+}
+
+#info th {
+    background-color: #db3434e9;
+    color: #ecf0f1;
+}
+.Slidesbackground {
+    margin: 0;
+    padding: 0;
+
+}
+.slideshow-image{
+    border-radius:3%;
+    width: 120%;
+    height: 100%;
+    overflow: hidden;
+}
+.mySlides {
+    border-radius:3%;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #db3434e9;
+    border: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+예약정보
+#reservation {
+    margin-top: 50px; /* 예약 정보와의 간격 조절 */
+}
+
+#reservation h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#reservation select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#totalAmount {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* 추가된 예약 정보 아래의 버튼 스타일 */
+#reservation button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reservation button:hover {
+    background-color: #2980b9;
+}
+
+.end{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+}
